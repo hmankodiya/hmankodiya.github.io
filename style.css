@@ -305,6 +305,7 @@ footer{
     margin-left:auto;
     margin-right:auto;
     padding: 2px 2px;
+    border-bottom: 2px solid rgb(181, 183, 185);
 }
 .project-entity{ 
     position: relative;
@@ -331,6 +332,13 @@ footer{
     font-size: 1.6em;
     text-align: center;
 }
+.view-project a{
+    color:#337ab7;
+    text-decoration:none;
+}
+.view-project a:hover{
+    text-decoration:underline;
+}
 .contact{
     margin: 0px 0px;
     /* border:2px solid red; */
@@ -338,13 +346,7 @@ footer{
     border-bottom: 2px solid rgb(181, 183, 185);
     text-align: center;
 }
-/* #email {
-    margin: 10px 15px;
-    text-align: center;
-}
-#mssg{
-    margin:2px 2px;
-} */
+
 .text-container{
     margin:2px 2px;
     padding: 2px 2px;
