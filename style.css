@@ -218,6 +218,7 @@ footer{
     font-size: 1.2em;
 }
 .mid-footer{
+    margin: 0px 0px 0px -110px;
     border: 3px khaki solid;
     height: 40px;
     width: 40px;
