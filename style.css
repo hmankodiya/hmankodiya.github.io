@@ -1,0 +1,417 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    /* display:block; */
+    margin:0;
+    padding:0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    text-align: center;
+    z-index:10;
+}
+#small-screen-menu{
+    display:none;
+    position: fixed;
+    cursor: pointer;
+    right: 20px;
+    top: 10px;
+    color: #3498db;
+    font-size: 1.5em;
+    z-index: 20;
+    padding: 0 7px;
+    border-radius: 4px;
+    background: #fff;
+}
+#close-menu{
+    display: none;
+    background:white;
+    z-index: 10;
+}
+header ul{
+    display: inline-block;
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    margin:0px 10px 0px 10px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+} 
+header ul li{
+    font-size:20px;
+    display: inline-block;
+    margin:0px  10px;
+    padding: 0px 5px;
+}
+header ul li a{
+    padding:2px 2px;
+    color: black;
+    text-decoration: none;
+}
+header ul li a:hover{
+    border-radius: 10px;
+    color: red;
+    opacity:0.6;
+    background:rgb(218, 218, 218);
+    text-decoration: none;
+}
+.intro-main{
+    padding: 0px 30px;
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    background: url("BG.jpg");
+    background-size: cover;
+    min-height: 700px;
+    max-height: 1080px;
+}
+.name-container{
+    position: absolute;
+    /* display:flex; */
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.name-container h1{
+    margin: 0px 20px 0px 20px;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: 0.05em;
+}
+.name-container h3 {
+    font-size: 3em;
+    font-weight: 500;
+    margin: 0px 0px 30px 0px;
+}
+.name-container a{
+    display: inline-block;
+    margin: 0px 0px 25px 0px;
+    padding: 20px; 
+    font-size:25px;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 33px;
+    border:solid 2px gray;
+    background:transparent;
+    outline:none;
+    cursor: pointer;
+    color:rgb(164, 202, 97);
+}
+.name-container a:hover{
+    background-color:whitesmoke;
+}
+@media only screen and (max-width: 575px){
+    .name-container h1 {
+        font-size:3.0em;
+        margin: 2px 2px;
+    }
+    .name-container h3{
+        font-size:1.5em;
+    }
+    .name-container a{
+        font-size:1.5em;  
+    }
+}
+.go-down{
+    position: absolute;
+    bottom: 15px;
+    color: ivory;
+    width: 100%;
+    left:0;
+    right:0;
+    text-align: center;
+    z-index: 10;
+}
+.go-down span{
+    border:khaki 2px solid;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline:none;
+}
+.go-down span i{
+    color: white;
+    font-size:25px;
+    padding-top: 7px;
+}
+.go-down span i:hover{
+    transform:scale(0.8);
+}
+.title{
+    position: relative;
+    color: rgb(65, 65, 65);
+    font-size: 3.4em;
+    margin: 0px 0px;
+    padding: 10px 10px;
+}
+.aboutme{
+    color:white;
+    width: 100%;
+    text-align:center;
+    background: rgb(213, 235, 255);
+    border-bottom: 2px solid rgb(181, 183, 185);
+    padding: 20px 30px;
+}
+#aboutme-info{
+    color: rgb(65, 65, 65);
+    margin: 0px 0px 15px 10px;
+    padding: 10px 50px;
+    font-size: 1.4em;
+}
+.education{
+    position: relative;
+    color:white;
+    width: 100%;
+    padding: 20px 40px;
+    text-align:center;
+    background: rgb(195 214 217);
+    border-bottom: 2px solid rgb(181, 183, 185);
+
+}
+.education-entity{
+    color: rgb(65, 65, 65);
+    max-width: 780px;
+    border: 2px #b9b5b5 solid;
+    padding: 10px 10px;
+    text-align: left;
+    margin: 0px auto 40px auto;
+    background: #fafafa;
+    box-shadow: 2px -2px 7px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+    font-size: 1.4em;
+}
+.education-entity h3{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.education-entity span{
+    float: right;
+}
+@media only screen and (max-width: 710px){
+    .education-entity h3, .education-entity span {
+        float: none;
+        /* background:violet ; */
+    }
+}
+.education-entity h5{ 
+    padding: 0px 0px;
+    clear: both;
+    font-weight: 300;
+    margin: 0px 0px 15px 0px;
+}   
+
+.education-entity p{
+    padding:2px 2px;
+    margin:0px 0px 10px 0px;
+}
+footer{
+    font-size: 1.5em;
+    padding:50px 30px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 30px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+.left-footer{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.left-footer p{
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px;
+    font-size: 1.2em;
+}
+.mid-footer{
+    margin: 0px 0px 0px -80px;
+    border: 3px khaki solid;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.mid-footer span i:hover{
+    transform:scale(0.8);
+}
+.right-footer{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 60px;
+    right: 0;
+}
+.right-footer ul{
+    list-style-type: none;
+    padding: 0px 0px;
+    color:black;
+}
+.right-footer ul li{
+    display: inline-block;
+    padding: 0px 15px;
+    color:black;
+}
+.right-footer ul li a{
+    display: block;
+    font-size:25px;
+}
+
+.right-footer ul li a:hover{
+    color:rgb(245, 146, 146);
+}
+.skills{
+    text-align: center;
+    margin: 0px 0px;
+    padding: 35px 30px;
+    background:rgb(195 214 217);
+    border-bottom: 2px solid rgb(181, 183, 185);
+}
+.skills ul{
+    max-width: 1000px;
+    display: block;
+    margin:2px auto;
+    padding: 0px 0px;
+    list-style-type: none;
+}
+.skills ul li{
+    display: inline-block;
+    margin: 7px 0px 6px 65px;
+    padding: 5px 15px;
+    border: 2px solid #d5d5d5;
+    font-size: 2em;
+    color: rgb(54, 54, 54);
+    background: #e4e4ea;
+    box-shadow: 3px -2px 6px 0px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+
+@media only screen and (max-width: 1060px){
+    .row {
+        display: block;
+        text-align: center
+    }
+    .mid-footer{
+        margin: 0px auto 20px auto;
+    }
+}
+
+.projects{
+    text-align:center;
+    background: rgb(213, 235, 255);
+    padding: 20px 30px;
+    border-bottom: 2px solid rgb(181, 183, 185);
+}
+.project-row{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px;
+}    
+.project-entity{ 
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+    border:2px #b9b5b5 solid;
+    box-shadow: 2px -2px 7px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+.project-entity h2 {
+    font-size: 2.3em;
+    font-weight: 300;
+    margin: 0px;
+}
+.desc {
+    margin: 0px 15px 0 15px;
+    padding: 10px 10px;
+    font-size: 1.2em;
+}
+.view-project{
+    margin: 0px 0px 15px 0px;
+    font-size: 1.6em;
+    text-align: center;
+}
+.view-project a{
+    color:#337ab7;
+    text-decoration:none;
+}
+.view-project a:hover{
+    text-decoration:underline;
+}
+.contact{
+    margin: 0px 0px;
+    padding: 0px 30px;
+    background: rgb(213, 235, 255);
+    border-bottom: 2px solid rgb(181, 183, 185);
+    text-align: center;
+}
+
+.text-container{
+    margin:2px 2px;
+    padding: 2px 2px;
+}
+.text-container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.text-container input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    color: black;
+    transition: .5s ease all;
+}
+.text-container textarea {
+    height: 150px;
+    resize: none;
+}
+.text-container input,.text-container textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 1.3em;
+    transition: .5s ease all;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+form{
+    display: block;
+    margin: 0px 0px 30px 0px;
+}
+.text-container button{
+    margin: 5px 5px;
+    padding: 5px 5px;
+    font-size: 1.3em;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    background: #e4e4ea;
+    border: 2px solid #e4e4ea;
+    outline:none;
+    transition: .5s ease all;
+}
+.text-container button:hover{
+    box-shadow: 2px -2px 7px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
