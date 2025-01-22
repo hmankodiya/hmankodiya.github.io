@@ -359,10 +359,11 @@
               [<a href="https://github.com/hmankodiya/PaperImplementations/tree/master/ShowAndTell">Code</a>]
               <br>
               Developed a caption generation model leveraging pre-trained DinoV2 transformer embeddings trained on the
-              MS COCO Captions dataset. Used a pre-trained GPT-2 tokenizer for caption tokenization and implemented an
-              LSTM head for caption generation, with plans to integrate a transformer decoder for improved performance.
-              Evaluated the model's generation capabilities using greedy decoding and beam search strategies,
-              demonstrating its potential for high-quality image-to-text outputs.
+              MS COCO Captions dataset. Incorporated both an LSTM head and a GPT-2 decoder, fine-tuned on ~1% of the MS
+              COCO dataset, for caption generation. Achieved a BLEU-4 score of 7% for the GPT-2 decoder. Used a
+              pre-trained GPT-2 tokenizer for caption tokenization and explored various search strategies, including
+              greedy decoding and beam search, to enhance caption generation quality. Demonstrated the model's potential
+              for high-quality image-to-text outputs through rigorous evaluation.
           </tr>
 
 
